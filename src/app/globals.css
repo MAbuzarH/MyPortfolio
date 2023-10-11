@@ -2,26 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+@layer components{
+  .menuLink{
+    @apply cursor-pointer hover:text-[#c5c5c5] relative
   }
 }
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+/* .lightc {
+  background-image: repeating-radial-gradient(
+    rgba(0, 0, 0, 0.4) 2px,
+    #ffff 5px,
+    #ffff 100px
+  );
 }
+.darkc{
+  background-image: repeating-radial-gradient(
+    rgba(225, 225, 225, 0.5) 2px,
+    #000 5px,
+    #000 100px
+  ); 
+} */
