@@ -35,7 +35,7 @@ const AnimatedNumbers = ({ value }: Props) => {
 function About() {
   return (
     <>
-      <main className="flex w-full flex-col items-center justify-center bg-white text-black dark:bg-black dark:text-white">
+      <main className="!overflow-x-hidden flex w-full flex-col items-center justify-center bg-white text-black dark:bg-black dark:text-white">
         <Layout style="pt-16">
           <AnimatedText
             text="Dedication Powers Achievement!"

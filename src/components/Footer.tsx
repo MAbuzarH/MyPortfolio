@@ -1,13 +1,13 @@
 import React from "react";
-import {SiUpwork} from 'react-icons/si'
-import {TbBrandFiverr} from 'react-icons/tb'
+import { SiUpwork } from "react-icons/si";
+import { TbBrandFiverr } from "react-icons/tb";
 function Footer() {
   return (
-    <div className="border-t">
+    <div className="border-t  !overflow-x-hidden">
       {/* <!--Footer container--> */}
       <footer className="flex flex-col items-center  text-center  bg-white text-black dark:bg-black dark:text-white">
         <div className="container pt-9">
-          <div className="mb-9 flex justify-center">
+          <div className="mb-9 flex justify-center ">
             {/* facebook icon */}
             <a
               href="https://www.facebook.com/syed.abuzarshah.14/"
@@ -16,7 +16,7 @@ function Footer() {
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-6 w-6"
+                className="h-6 w-6 sm:h-3 sm:w-3"
                 fill="currentColor"
                 viewBox="0 0 24 24"
               >
@@ -29,15 +29,15 @@ function Footer() {
               target="_blank"
               className="mr-9 text-neutral-800 dark:text-neutral-100"
             >
-        <SiUpwork className='h-6 w-6 '/>
+              <SiUpwork className="h-6 w-6 sm:h-3 sm:w-3" />
             </a>
             {/* fivver icon */}
             <a
-            target="_blank"
+              target="_blank"
               href="https://www.fiverr.com/mabuzarhaider/create-web-app-using-nextjs-reactjs-tailwind-and-sanity-cms"
               className="mr-9 text-neutral-800 dark:text-neutral-100"
             >
-            <TbBrandFiverr  className='h-6 w-6 '/>
+              <TbBrandFiverr className="h-6 w-6 sm:h-3 sm:w-3" />
             </a>
             {/* <a
               href="#!"
@@ -54,13 +54,13 @@ function Footer() {
             </a> */}
             {/* Linked in icon */}
             <a
-            target="_blank"
+              target="_blank"
               href="https://www.linkedin.com/in/syed-muhammad-abuzar-20482423a/"
               className="mr-9 text-neutral-800 dark:text-neutral-100"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-6 w-6"
+                className="h-6 w-6 sm:h-3 sm:w-3"
                 fill="currentColor"
                 viewBox="0 0 24 24"
               >
@@ -69,13 +69,13 @@ function Footer() {
             </a>
             {/* git hub icon */}
             <a
-            target="_blank"
+              target="_blank"
               href="https://github.com/MAbuzarH"
               className="text-neutral-800 dark:text-red-100"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-6 w-"
+                className="h-6 w-6 sm:h-3 sm:w-3"
                 fill="currentColor"
                 viewBox="0 0 24 24"
               >
@@ -86,9 +86,9 @@ function Footer() {
         </div>
         {/* 
   <!--Copyright section--> */}
-        <div className="w-full  p-4 text-center bg-white text-black dark:bg-black dark:text-white">
+        <div className="w-full sm:text-[8px] p-4 text-center bg-white text-black text-xs dark:bg-black dark:text-white">
           © 2023 Copyright:
-          <a className="text-neutral-800 dark:text-neutral-200 font-bold">
+          <a className="text-xs text-neutral-800 dark:text-neutral-200 font-bold sm:text-[8px] sm:font-medium">
             {" "}
             M Abuzar Haider
           </a>

@@ -27,7 +27,7 @@ const FeaturedProjects = ({
   img,
 }: Props) => {
   return (
-    <article className="flex w-full lg:flex-col lg:p-8 xs:rounded-2xl xs:rounded-br-3xl xs:p-3 rounded-3xl border-[2px] dark:bg-white/40 border-solid border-black dark:border-white items-center justify-between  bg-gray-200 p-12 relative rounded-br-2xl">
+    <article className="flex w-full sm:w-[99%]  lg:flex-col lg:p-8 xs:rounded-2xl xs:rounded-br-3xl  rounded-3xl border-[2px] dark:bg-white/40 border-solid border-black dark:border-white items-center justify-between sm:p-2 bg-gray-200 p-12 relative rounded-br-2xl">
       <div
         className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%]
               rounded-[3rem] bg-black/50  dark:bg-slate-50  xs:-right-2 xs:h-[102%] xs:w-[100%]
@@ -60,7 +60,7 @@ const FeaturedProjects = ({
             {title}
           </h2>
         </Link>
-        <p className="my-2 font-medium ">{summary}</p>
+        <p className="my-2 font-medium sm:font-base sm:text-sm ">{summary}</p>
         <div className="flex mt-2 items-center text-xl  ">
           <Link href={github} target="_blank" className=" text-4xl">
             <AiFillGithub />
@@ -80,7 +80,7 @@ const FeaturedProjects = ({
 
 const OtherProject = ({ title, link, github, type, img }: Props) => {
   return (
-    <article className="w-full lg:p-[16px] rounded-2xl border-[2px] border-solid dark:bg-white/40 border-black items-center justify-center bg-gray-200 shadow-xl shadow-white/60 p-12 relative flex-col sm:p-4 dark:border-white">
+    <article className="w-full sm:w-[99%]  h-[100%]  lg:p-[16px] rounded-2xl border-[2px] border-solid dark:bg-white/40 border-black items-center justify-center bg-gray-200 shadow-xl shadow-white/60 p-12 relative flex-col sm:p-4 dark:border-white">
       <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[1.5rem] bg-black rounded-br-3xl" />
       <Link
         className="w-full overflow-hidden rounded-lg cursor-pointer"
@@ -95,10 +95,10 @@ const OtherProject = ({ title, link, github, type, img }: Props) => {
           height={2200}
         />
       </Link>
-      <span className="text-blue-500 font-medium text-xl pl-10 mt-2">
+      <span className="text-blue-500 font-medium text-xl pl-10 mt-2 sm:pl-0">
         {type}
       </span>
-      <div className="flex w-full flex-col items-start justify-between pl-6">
+      <div className="flex w-full flex-col items-start justify-between pl-6 sm:pl-0">
         <Link
           href={link}
           target="_blank"
@@ -129,7 +129,7 @@ const OtherProject = ({ title, link, github, type, img }: Props) => {
 function Projects() {
   return (
     <>
-      <main className="bg-white text-black dark:bg-black dark:text-white overflow-x-hidden ">
+      <main className="bg-white text-black dark:bg-black dark:text-white sm:w-full !overflow-x-hidden ">
         <Layout style="pt-16 flex-col flex items-center justify-center">
           <AnimatedText
             text="Imagination Trumps Knowledge"

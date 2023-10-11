@@ -2,7 +2,7 @@ import React from "react";
 
 const ContactMe = () => {
   return (
-    <div className="bg-gray-100 py-12 dark:bg-black dark:text-white overflow-x-hidden">
+    <div className="bg-gray-100 py-12 dark:bg-black dark:text-white md:w-screen  !overflow-x-hidden">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-semibold text-center text-gray-800 mb-8 dark:text-white">
           Contact Me
@@ -56,9 +56,10 @@ const ContactMe = () => {
                 <button
                   className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
                   type="button"
-                
                 >
-                  <a href="https://wa.me/03421210217" target="_blank">Send</a> 
+                  <a href="https://wa.me/03421210217" target="_blank">
+                    Send
+                  </a>
                 </button>
               </div>
             </form>
@@ -74,10 +75,10 @@ const ContactMe = () => {
                 Feel free to reach out to me via email or phone. I&#39;m always
                 happy to connect!
               </p>
-              <div className="flex items-center space-x-4">
+              <div className="flex items-center space-x-4 xs:flex-col">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-6 w-6 text-gray-600"
+                  className="h-6 w-6 sm:h-3 sm:w-3 text-gray-600"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -89,8 +90,8 @@ const ContactMe = () => {
                     d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"
                   />
                 </svg>
-                <p className="text-gray-700">
-                  <a href="mailto:youremail@example.com">
+                <p className="text-gray-700 ">
+                  <a href="shahabuzar172@gmail.com" target="_blank">
                     shahabuzar172@gmail.com
                   </a>
                 </p>
@@ -98,7 +99,7 @@ const ContactMe = () => {
               <div className="flex items-center space-x-4 mt-4">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-6 w-6 text-gray-600"
+                  className="h-6 w-6 sm:h-3 sm:w-3 text-gray-600"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
